@@ -1,0 +1,31 @@
+{
+    "name": "cloostsmplauncher-electron",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cherabear4/React-Electron-StarterKit.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/cherabear4/React-Electron-StarterKit/issues"
+    },
+    "homepage": "https://github.com/cherabear4/React-Electron-StarterKit#readme",
+    "devDependencies": {
+        "axios": "^1.9.0",
+        "custom-electron-titlebar": "^4.2.8",
+        "electron": "^36.2.0",
+        "electron-builder": "^26.0.12"
+    },
+    "dependencies": {
+        "eml-lib": "^2.0.0-beta.1"
+    }
+}
