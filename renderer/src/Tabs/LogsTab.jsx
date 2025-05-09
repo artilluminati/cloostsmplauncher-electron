@@ -1,8 +1,19 @@
 import { useState, useEffect } from "react";
 import Icon from "../components/Icon";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { okaidia } from "react-syntax-highlighter/dist/esm/styles/hljs";
+
 import hljs from "highlight.js/lib/core";
+import { materialLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { ghcolors } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { prism } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { solarizedlight } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { oneLight } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export default function LogsTab({ onSwitchTab, logs }) {
     const [files, setFiles] = useState([]); // список файлов в папке logs
@@ -104,7 +115,7 @@ export default function LogsTab({ onSwitchTab, logs }) {
                     </div>
                 </div>
                 <div className="logs__content">
-                    <SyntaxHighlighter language="scheme" style={okaidia}>
+                    <SyntaxHighlighter language="scheme" style={oneLight}>
                         {codeString}
                     </SyntaxHighlighter>
                 </div>
